@@ -1,0 +1,232 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{5552ED34-F606-4CD4-A025-0D545DDD941C}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TS.Test</RootNamespace>
+    <AssemblyName>TS.Test</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>..\bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisIgnoreBuiltInRuleSets>true</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisFailOnMissingRules>true</CodeAnalysisFailOnMissingRules>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
+    <OutputPath>..\bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+    <CodeAnalysisFailOnMissingRules>true</CodeAnalysisFailOnMissingRules>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <DependentUpon>Resources.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="properties.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bg_login.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_login.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_login_close_N.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_login_close_O.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tit_ico_h2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Expander_Collapsed16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Expander_Expanded16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bg_top.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bg_LF.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bg_LF2D_Menu_N.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bg_LF2D_Menu_O.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bg_LF2D_Menu_S.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bg_LF3D.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bg_LF3D_Menu_N.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bg_LF3D_Menu_O.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img_TP_GNB04_O.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bg_TP_GNB.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img_TP_GNB01_N.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img_TP_GNB01_O.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img_TP_GNB02_N.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img_TP_GNB02_O.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img_TP_GNB03_N.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img_TP_GNB03_O.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img_TP_GNB04_N.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TP_logo.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bg_MDI.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_MDI_O_N.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_MDI_O_O.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_MDI_SN_N.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_MDI_SN_O.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_MDI_Tab_N.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_MDI_Tab_O.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_MDI_Tab_S.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img_LF_N.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img_LF_O.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\01. Fx\TS.Fx\TS.Fx.csproj">
+      <Project>{0E69321A-6AAD-4E28-BB92-B691A48468E3}</Project>
+      <Name>TS.Fx</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\03. TS.Biz\TS.Common.Biz\TS.Biz.csproj">
+      <Project>{D50475DD-99D9-4E4D-A627-5F3CA6542F47}</Project>
+      <Name>TS.Biz</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

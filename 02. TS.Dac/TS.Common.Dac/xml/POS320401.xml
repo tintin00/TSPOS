@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<sqlMap namespace="POS320401" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ibatis.apache.org/mapping">
+
+
+
+  <statements>
+  
+    <select id="GetUserInfo" parameterClass="hashtable"  resultClass="System.Collections.Specialized.HybridDictionary">
+        select 
+        '1' AS Id,
+        'mkkim' AS UserId,
+        '1234' AS UserPwd,
+        '1' AS DeptId
+        <!--from user
+        where 1=1-->
+    </select>
+
+    <insert id="SetUserInfo" parameterClass="hashtable"  resultClass="System.Collections.Specialized.HybridDictionary">
+
+      insert into TB_USER_INFO_N
+      (USER_ID)
+      values
+      ( #USER_ID# )
+
+    </insert>
+
+  </statements>
+
+</sqlMap>
