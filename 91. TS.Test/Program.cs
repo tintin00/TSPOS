@@ -18,7 +18,7 @@ namespace TS.Test
 
             //Global.g_posInfo.USER.INITL_PROGRM_ID = "F";
             //Application.Run(new Form1(Global.START_UP));
-            Application.Run(new Form1());
+            Application.Run(new Form3());
            //공통코드 :
             //POS320301
             //POS320307

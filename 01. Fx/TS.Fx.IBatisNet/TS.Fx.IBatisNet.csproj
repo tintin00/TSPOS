@@ -10,9 +10,10 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>TS.Fx.IBatisNet</RootNamespace>
     <AssemblyName>TS.Fx.IBatisNet</AssemblyName>
-    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <TargetFrameworkProfile />
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
     <SccProjectName>
     </SccProjectName>
     <SccLocalPath>
@@ -48,22 +49,17 @@
     <OutputPath>bin\x86\Release\</OutputPath>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="IBatisNet.Common">
-      <HintPath>..\..\90. External bin\IBatisNet.Common.dll</HintPath>
-    </Reference>
-    <Reference Include="IBatisNet.DataMapper">
-      <HintPath>..\..\90. External bin\IBatisNet.DataMapper.dll</HintPath>
-    </Reference>
     <Reference Include="Microsoft.Office.Interop.Excel, Version=12.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c">
       <EmbedInteropTypes>True</EmbedInteropTypes>
     </Reference>
     <Reference Include="System" />
-    <Reference Include="System.Data.SQLite">
-      <HintPath>..\..\90. External bin\System.Data.SQLite.dll</HintPath>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.SQLite, Version=1.0.92.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\90. External bin\net40\x86\System.Data.SQLite.dll</HintPath>
     </Reference>
     <Reference Include="System.Drawing" />
     <Reference Include="System.Windows.Forms" />
-    <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
@@ -76,6 +72,14 @@
     <EmbeddedResource Include="Config\SqlMapLocal.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\00. Lib\IBatisNet\IBatisNet.Common\IBatisNet.Common.2010.csproj">
+      <Project>{BBC8DA4A-EA88-41D9-8B93-929B8F3ADADE}</Project>
+      <Name>IBatisNet.Common.2010</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\00. Lib\IBatisNet\IBatisNet.DataMapper\IBatisNet.DataMapper.2010.csproj">
+      <Project>{F3E45F39-3224-4EAD-B138-EB5CC0E32824}</Project>
+      <Name>IBatisNet.DataMapper.2010</Name>
+    </ProjectReference>
     <ProjectReference Include="..\TS.Fx\TS.Fx.csproj">
       <Project>{0E69321A-6AAD-4E28-BB92-B691A48468E3}</Project>
       <Name>TS.Fx</Name>

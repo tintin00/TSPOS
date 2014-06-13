@@ -11,10 +11,18 @@ using System.Windows.Forms;
 using TS.Fx.Base;
 using TS.Biz;
 
+//using IBatisNet.DataMapper;
+//using IBatisNet.Common;
+//using IBatisNet.Common.Logging;
+//using IBatisNet.Common.Logging.Impl;
+
+
 namespace TS.Test
 {
-    public partial class Form1 : Form
+    public partial class Form1 : frmFormBase
     {
+        
+
         public Form1()
         {
             InitializeComponent();
@@ -22,6 +30,8 @@ namespace TS.Test
 
         private void button1_Click(object sender, EventArgs e)
         {
+            //log.Debug("Hello World!");
+
             DsResponse dsRes = null;
             DsRequest dsReq = new DsRequest();
             Hashtable ht = new Hashtable();

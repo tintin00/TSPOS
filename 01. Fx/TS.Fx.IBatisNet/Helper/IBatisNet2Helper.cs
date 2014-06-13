@@ -37,7 +37,7 @@ namespace TS.Fx.IBatisNet.Helper
                                 //    sqlMapConfig = Resources.GetEmbeddedResourceAsXmlDocument("KPTR.BIZ.Config.SqlMapLocal.config, KPTR.BIZ");
                                 //else
                                 //    sqlMapConfig = Resources.GetEmbeddedResourceAsXmlDocument("KPTR.BIZ.Config.SqlMap.config, KPTR.BIZ");
-                                sqlMapConfig = Resources.GetEmbeddedResourceAsXmlDocument("TS.Fx.iBatis.Config.SqlMap.config, TS.Fx.iBatis");
+                                //sqlMapConfig = Resources.GetEmbeddedResourceAsXmlDocument("TS.Fx.iBatis.Config.SqlMap.config, TS.Fx.iBatis");
 #else
                                //sqlMapConfig = Resources.GetEmbeddedResourceAsXmlDocument("KPTR.BIZ.Config.SqlMap.config, KPTR.BIZ");
                                 //if (Global.g_posInfo.USER.INITL_PROGRM_ID.ToString() == Global.POS_KIND_OFFICE)//사무실(후방) 로컬

@@ -10,9 +10,10 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>TS.Dac</RootNamespace>
     <AssemblyName>TS.Dac</AssemblyName>
-    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <TargetFrameworkProfile />
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
     <SccProjectName>
     </SccProjectName>
     <SccLocalPath>
@@ -49,12 +50,6 @@
     <OutputPath>bin\x86\Release\</OutputPath>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="IBatisNet.Common">
-      <HintPath>..\..\90. External bin\IBatisNet.Common.dll</HintPath>
-    </Reference>
-    <Reference Include="IBatisNet.DataMapper">
-      <HintPath>..\..\90. External bin\IBatisNet.DataMapper.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Data" />
@@ -68,6 +63,14 @@
     <EmbeddedResource Include="xml\POS320401.xml" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\00. Lib\IBatisNet\IBatisNet.Common\IBatisNet.Common.2010.csproj">
+      <Project>{BBC8DA4A-EA88-41D9-8B93-929B8F3ADADE}</Project>
+      <Name>IBatisNet.Common.2010</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\00. Lib\IBatisNet\IBatisNet.DataMapper\IBatisNet.DataMapper.2010.csproj">
+      <Project>{F3E45F39-3224-4EAD-B138-EB5CC0E32824}</Project>
+      <Name>IBatisNet.DataMapper.2010</Name>
+    </ProjectReference>
     <ProjectReference Include="..\..\01. Fx\TS.Fx.IBatisNet\TS.Fx.IBatisNet.csproj">
       <Project>{F4392026-170F-4EEF-9C22-EF680CAD39E1}</Project>
       <Name>TS.Fx.IBatisNet</Name>

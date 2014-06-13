@@ -1,0 +1,214 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{042F34C5-AD98-417C-9D1B-BC9E6CDF2532}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TS.Dev.Test2</RootNamespace>
+    <AssemblyName>TS.Dev.Test2</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Debug\TS.Dev.Test2.exe.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>true</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Release\TS.Dev.Test2.exe.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>true</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.BonusSkins.v14.1" />
+    <Reference Include="DevExpress.Data.v14.1" />
+    <Reference Include="DevExpress.DevAV.v14.1.Data, Version=14.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.DevAV.v14.1.Model, Version=14.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Mvvm.v14.1, Version=14.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v14.1" />
+    <Reference Include="DevExpress.XtraBars.v14.1" />
+    <Reference Include="DevExpress.Sparkline.v14.1.Core" />
+    <Reference Include="DevExpress.XtraEditors.v14.1" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Resources\SkinInfoBlob.Designer.cs" />
+    <Compile Include="ViewModel\Interfaces.cs" />
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Resources\SkinInfoBlob.resx" />
+    <None Include="App.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="Resources\Map\NorthAmerica.dbf" />
+    <None Include="Resources\Map\NorthAmerica.shp" />
+    <None Include="SkinData\hybridapp.blob" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\AppIcon.ico" />
+    <Content Include="Resources\ArrowLeft.png" />
+    <Content Include="Resources\ArrowRight.png" />
+    <Content Include="Resources\Calendar.png" />
+    <Content Include="Resources\Contacts\Email.png" />
+    <Content Include="Resources\Contacts\HomePhone.png" />
+    <Content Include="Resources\Contacts\MobilePhone.png" />
+    <Content Include="Resources\Contacts\Skype.png" />
+    <Content Include="Resources\Employees\All.png" />
+    <Content Include="Resources\Employees\Comission.png" />
+    <Content Include="Resources\Employees\OnLeave.png" />
+    <Content Include="Resources\Employees\Probation.png" />
+    <Content Include="Resources\Employees\Salaried.png" />
+    <Content Include="Resources\Employees\Terminated.png" />
+    <None Include="Resources\MediumPriority.png" />
+    <None Include="Resources\LowPriority.png" />
+    <None Include="Resources\HighPriority.png" />
+    <Content Include="Resources\Menu\Customers.png" />
+    <Content Include="Resources\Menu\Dashboard.png" />
+    <Content Include="Resources\Menu\Employees.png" />
+    <Content Include="Resources\Menu\Opportunities.png" />
+    <Content Include="Resources\Menu\Products.png" />
+    <Content Include="Resources\Menu\Sales.png" />
+    <Content Include="Resources\Menu\Tasks.png" />
+    <None Include="Resources\NormalPriority.png" />
+    <Content Include="Resources\Products\All.png" />
+    <Content Include="Resources\Products\Automation.png" />
+    <Content Include="Resources\Products\Monitors.png" />
+    <Content Include="Resources\Products\Projectors.png" />
+    <Content Include="Resources\Products\TVs.png" />
+    <Content Include="Resources\Products\VideoPlayers.png" />
+    <Content Include="Resources\returnButton.png" />
+    <Content Include="Resources\Separator.png" />
+    <Content Include="Resources\splitter3.png" />
+    <Content Include="Resources\Status\Completed.png" />
+    <Content Include="Resources\Status\Deferred.png" />
+    <Content Include="Resources\Status\InProgress.png" />
+    <Content Include="Resources\Status\NeedAssistance.png" />
+    <Content Include="Resources\Status\NotStarted.png" />
+    <Content Include="Resources\Tasks\AllTasks.png" />
+    <Content Include="Resources\Tasks\Completed.png" />
+    <Content Include="Resources\Tasks\Deferred.png" />
+    <Content Include="Resources\Tasks\HighPriority.png" />
+    <Content Include="Resources\Tasks\InProgress.png" />
+    <Content Include="Resources\Tasks\NotStarted.png" />
+    <Content Include="Resources\Tasks\Urgent.png" />
+    <Content Include="Resources\Toolbar\Cancel.png" />
+    <Content Include="Resources\Toolbar\CustomFilter.png" />
+    <Content Include="Resources\Toolbar\Delete.png" />
+    <Content Include="Resources\Toolbar\Edit.png" />
+    <Content Include="Resources\Toolbar\MailMerge.png" />
+    <Content Include="Resources\Toolbar\MapView.png" />
+    <Content Include="Resources\Toolbar\Meeting.png" />
+    <Content Include="Resources\Toolbar\New.png" />
+    <Content Include="Resources\Toolbar\Note.png" />
+    <Content Include="Resources\Toolbar\OrderList.png" />
+    <Content Include="Resources\Toolbar\PivotTable.png" />
+    <Content Include="Resources\Toolbar\Print.png" />
+    <Content Include="Resources\Toolbar\Reports.png" />
+    <Content Include="Resources\Toolbar\SalesMap.png" />
+    <Content Include="Resources\Toolbar\Save.png" />
+    <Content Include="Resources\Toolbar\SaveAndClose.png" />
+    <Content Include="Resources\Toolbar\Settings.png" />
+    <Content Include="Resources\Toolbar\SortAZ.png" />
+    <Content Include="Resources\Toolbar\SortZA.png" />
+    <Content Include="Resources\Toolbar\Task.png" />
+    <Content Include="Resources\Toolbar\ZoomIn.png" />
+    <Content Include="Resources\Toolbar\ZoomOut.png" />
+    <None Include="Resources\devAV-logo-100.png" />
+    <None Include="Resources\DateEditIcon.png" />
+    <None Include="Resources\Clear1.png" />
+    <None Include="Resources\Clear.png" />
+    <Content Include="SkinData\hybridapp.skin.xml" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
